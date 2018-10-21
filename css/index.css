@@ -1,10 +1,11 @@
 ﻿body {
-  font-family: monospace;
+    font-family: Lucida Console;
+    font-size: 12px;
 }
 
 svg {
   stroke: blue;
-  stroke-width: 1;
+  stroke-width: 2;
 }
 
 
@@ -20,12 +21,47 @@ svg {
 
 }
 
+/*
 input, button, textarea, select {
     width: 100%;
+    font-family: Lucida Console;
+    font-size: 12px;
+}
+*/
+
+select, button{
+    margin: 0;
+    height: 25px;
+    width: 100%; 
+    padding-left: 5px;
+    font-family: Lucida Console;
+    font-size: 12px;
 }
 
+input {
+  height: 25px;
+  box-sizing: border-box;
+  padding-left: 9px;
+  font-family: Lucida Console;
+  font-size: 12px;
+  width: 100%;
+}
+
+
+.checkbox {
+    border: 1px solid gray;
+    height: 15px;
+}
+
+
 textarea {
-resize: none;
+  box-sizing: border-box;
+  padding-left: 9px;
+  width: 100%;
+  resize: none;
+  font-family: Lucida Console;
+  font-size: 12px;
+  height:75px
 }
 
 
@@ -54,27 +90,27 @@ resize: none;
 
 
 .grid-branch-start {
-    height: 60px;
-    width: 15px;
+    height: 80px;
+    width: 20px;
     z-index: 1;
     float: left;
-    background-color: lightgray;
+/*    background-color: lightgray;*/
 }
 
 .grid-branch {
-    height: 60px;
-    width: 15px;
+    height: 80px;
+    width: 20px;
     z-index: 1;
     float: left;
-    background-color: lightgray;
+/*    background-color: lightgray;*/
 }
 
 .grid-branch-end {
-    height: 60px;
-    width: 15px;
+    height: 80px;
+    width: 20px;
     z-index: 1;
     float: left;
-    background-color: lightgray;
+/*    background-color: lightgray;*/
 }
 
 .grid-branch-start:hover {
@@ -92,7 +128,7 @@ resize: none;
 
 
 .grid-node {
-    height: 60px;
+    height: 80px;
     width: 60px;
     z-index: 1;
     float: left;
@@ -115,19 +151,22 @@ resize: none;
 .node-name {
     height: 15px;
     width: 60px;
-    
+    text-align: center;
+padding-top: 5px;
     background-color: black;
     color: white;
+    overflow: hidden;
 }
 
 .node-add {
     height: 15px;
     width: 60px;
+    padding-top: 5px;
     background-color: lightgray;
 }
 
 .node-svg {
-    height: 30px;
+    height: 40px;
     width: 60px;
     background-color: white;
 }
@@ -135,6 +174,8 @@ resize: none;
 .note {
     position: absolute;
     background-color: yellow;
+    overflow: hidden;
+    padding: 5px;
     width: 120px;
     z-index: 2;
 }
